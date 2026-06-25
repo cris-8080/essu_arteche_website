@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+
+    <h1>My Profile</h1>
+
+    <h2>Name</h2>
+    <p>Cris Lorezo</p>
+
+    <h2>About Me</h2>
+    <p>I am a student interested in technology and web development.</p>
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li>Email: lorezocris@email.com</li>
+        <li>Phone: 09687036612</li>
+    </ul>
+
+</body>
+</html>
+
