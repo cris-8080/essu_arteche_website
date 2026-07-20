@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile | ESSU-AEC</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================ -->
+    <!-- HEADER                                                       -->
+    <!-- ============================================================ -->
+
+    <header class="page-header">
+        <h1>Student Profile</h1>
+        <p>
+            This page contains the profile information of a student enrolled at
+            <strong>Eastern Samar State University – Arteche Extension Campus</strong>.
+        </p>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION                                                   -->
+    <!-- ============================================================ -->
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- MAIN CONTENT                                                 -->
+    <!-- ============================================================ -->
+
+    <main class="main-body">
+
+        <!-- Split Layout Container (Left & Right Columns) -->
+        <div class="profile-split-container">
+
+            <!-- -------- LEFT COLUMN -------- -->
+            <section class="left-column">
+
+                <!-- Profile Info -->
+                <div class="profile-card">
+                    <div class="profile-photo">
+                        <img src="./assets/images/default.png" alt="Student Picture" width="200" height="200" />
+                    </div>
+                    <div class="personal-info">
+                        <h2>Personal Information</h2>
+                        <p><strong>Full Name:</strong> Pedro San Juan</p>
+                        <p><strong>Student Number:</strong> 2024-0001</p>
+                        <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
+                        <p><strong>Year Level:</strong> Second Year</p>
+                        <p><strong>Email:</strong> juandelacruz@email.com</p>
+                        <p><strong>Address:</strong> Cebu City, Philippines</p>
+                    </div>
+                </div>
+
+                <!-- Biography -->
+                <section class="info-section">
+                    <h2>Biography</h2>
+                    <p>
+                        Juan Dela Cruz is currently taking Bachelor of Science in Information
+                        Technology. He enjoys learning web development, programming,
+                        database management, and networking.
+                    </p>
+                </section>
+
+                <!-- Skills -->
+                <section class="info-section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Microsoft Office</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </section>
+
+                <!-- Educational Background -->
+                <section class="info-section">
+                    <h2>Educational Background</h2>
+                    <ol>
+                        <li>Elementary</li>
+                        <li>Junior High School</li>
+                        <li>Senior High School</li>
+                        <li>College</li>
+                    </ol>
+                </section>
+
+            </section>
+
+            <!-- -------- RIGHT COLUMN -------- -->
+            <section class="right-column">
+
+                <!-- Current Subjects (table) -->
+                <section class="info-section subjects-table">
+                    <h2>Current Subjects</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Description</th>
+                                <th>Instructor</th>
+                                <th>Schedule</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IT413 / Elective 3*</td>
+                                <td>Web Systems and Technologies</td>
+                                <td>Mr. Silla</td>
+                                <td>MW 7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Comp 212</td>
+                                <td>Object Oriented Programming</td>
+                                <td>Mr. Silla</td>
+                                <td>TTH 10:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>IT 314 / Elective 1*</td>
+                                <td>Advanced Database Systems</td>
+                                <td>Mr. Silla</td>
+                                <td>MWF 2:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </section>
+
+        </div> <!-- End of Split Layout Container -->
+
+        <!-- -------- FULL WIDTH SECTIONS -------- -->
+
+        <!-- Contact Form -->
+        <section class="info-section contact-form full-width">
+            <h2>Contact the Student</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course">
+                        <option>BSIT</option>
+                        <option>BSEd</option>
+                        <option>BEEd</option>
+                        <option>BSHM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" /> Male</label>
+                        <label><input type="radio" name="gender" value="female" /> Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="programming" /> Programming</label>
+                        <label><input type="checkbox" name="interests" value="networking" /> Networking</label>
+                        <label><input type="checkbox" name="interests" value="multimedia" /> Multimedia</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clear" />
+                </div>
+            </form>
+        </section>
+
+        <!-- School Location (iframe) -->
+        <section class="info-section location-iframe full-width">
+            <h2>School Location</h2>
+            <iframe
+                src="https://www.google.com"
+                width="100%"
+                height="350"
+                title="School Location Map">
+            </table>
+            <!-- Note: Fixed the closing tag below to match iframe standard -->
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER                                                       -->
+    <!-- ============================================================ -->
+
+    <footer class="page-footer">
+        <p>&copy; 2026 <span>ESSU – Arteche</span></p>
+    </footer>
+
+</body>
+
+</html>
